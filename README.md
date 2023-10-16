@@ -32,4 +32,11 @@ The main blocks that integrate the design presented above are:
 6) SAR Logic (grey square).
 
 ### Differential Capacitive DAC
-The schematic of the capacitive DAC array is composed of 
+The schematic of the capacitive DAC array is composed of 10 capacitors connected in a bridged configuration to separate the most significant bits from the less significant bits. The unitary capacitor value is 100fF. (In progress to be optimized)
+![ADC_SAR proposal](./Images/Differential_capacitive_DAC_array_sch.png)
+
+The corresponding symbol in xschem is presented below.
+![ADC_SAR proposal](./Images/Differential_capacitive_DAC_array.png)
+
+
+
