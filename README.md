@@ -100,3 +100,15 @@ Then, the simulation results validate the behavior of the block.
 
 ## Integration of the blocks
 
+### Bootstrap tracking switches - Dynamic Comparator - SAR Logic
+Follows the testbench and simulation results of the integration of the blocks Bootstrap tracking switches - Dynamic Comparator - SAR Logic.
+![Testbench of the blocks Bootstrap tracking switches - Dynamic Comparator - SAR Logic](./Images/TrackingSW_DynComp_SARLogic_tb.png)
+Then, the simulation results validating the behavior of this part of the SAR ADC are depicted.
+![Simulation results of the blocks Bootstrap tracking switches - Dynamic Comparator - SAR Logic](./Images/TrackingSW_DynComp_SARLogic_tb_simulations.png)
+
+### Integration of the SAR ADC
+The testbench of the SAR ADC circuit is illustrated below.
+![SAR ADC testbench](./Images/integration_tb.png)
+
+
+
