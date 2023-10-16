@@ -1,5 +1,15 @@
 # 11-bit differential SAR ADC design
 
+List and information of the members in charge of the design of the SAR ADC circuit.
+
+|Name|Email|Affiliation|IEEE Member|SSCS Member|
+|:--:|:--:|:----------:|:----------:|:----------:|
+|Fredy Enrique Segura Quijano|fsegura@uniandes.edu.co|Universidad de Los Andes|Yes|No|
+|David Alejandro Reyes Gonzales|darge3t.uis@gmail.com|HCL-Brazil|No|No|
+|Juan Andrés Lopez Cubides|juan.andres.lopez491@gmail.com|Universidad de Los Andes|Yes|No|
+|Ashutosh Kumar|kashiashu2000@gmail.com|Cochin University of Science and Technology|||
+|Juan Sebastián Moya Baquero (Lead) <br />|jsmoya07@gmail.com|Universidad Industrial de Santander/Universidad de Los Andes|Yes|Yes|
+
 ## Introduction
 
 The proposed ADC-SAR design is presented in the following figure.
@@ -79,6 +89,14 @@ The corresponding testbench is presented.
 ![SAR  Asynchronous Logic testbench.](./Images/SAR_Async_Logic_tb.png)
 Finally, we present the simulation results of the asynchronous logic. When the output vocp of the Dynamic Comparator is high, and dn=va=vb='1', the output of the asynchronous logic takes the low value. When the output vocp of the Dynamic Comparator is high, and dn=va=vb='0', the output of the asynchronous logic takes the high value. Finally, when vocp is low, the output of the asynchronous logic takes the value of Vcm= Vdd/2.
 ![SAR  Asynchronous Logic simulation results.](./Images/SAR_Async_Logic_tb_sim.png)
+
+### Clock generator
+The schematic of the asynchronous clock is presented.
+![Schematic of the asynchronous clock generator](./Images/clock_generator.png)
+The corresponding testbench can be observed below.
+![Testbench of the asynchronous clock generator](./Images/clock_generator_tb.png)
+Then, the simulation results validate the behavior of the block.
+![Simulations of the asynchronous clock generator](./Images/clock_generator_simulation.png)
 
 ## Integration of the blocks
 
