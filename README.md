@@ -73,11 +73,12 @@ The simulation results of the SAR logic are illustrated below. All the outputs o
 ![Simulation results of the SAR Logic block.](./Images/SAR_Logic_simulation.png)
 
 ### SAR Asynchronous Logic
-Finally, the following images validate the performance of the SAR Asynchronous Logic block. First, the corresponding schematic composed of the two D Flip-Flops and the switches that set to '1' or '0' the bottom plate of the capacitors.
+Finally, the following images validate the performance of the SAR Asynchronous Logic block. First, the corresponding schematic is composed of the two D Flip-Flops and the switches that set to '1' or '0' the bottom plate of the capacitors.
 ![SAR  Asynchronous Logic schematic.](./Images/SAR_Async_Logic.png)
 The corresponding testbench is presented.
 ![SAR  Asynchronous Logic testbench.](./Images/SAR_Async_Logic_tb.png)
-Finally, we present the simulation results of the asynchronous logic.
+Finally, we present the simulation results of the asynchronous logic. When the output vocp of the Dynamic Comparator is high, and dn=va=vb='1', the output of the asynchronous logic takes the low value. When the output vocp of the Dynamic Comparator is high, and dn=va=vb='0', the output of the asynchronous logic takes the high value. Finally, when vocp is low, the output of the asynchronous logic takes the value of Vcm= Vdd/2.
 ![SAR  Asynchronous Logic simulation results.](./Images/SAR_Async_Logic_tb_sim.png)
 
+## Integration of the blocks
 
