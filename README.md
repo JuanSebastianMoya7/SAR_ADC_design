@@ -69,7 +69,15 @@ Schematic with the 11 Flip-Flops.
 Corresponding testbench of the SAR Logic.
 ![SAR Logic testbench](./Images/SAR_Logic_tb.png)
 
+The simulation results of the SAR logic are illustrated below. All the outputs of the flip-flops take the '1' value when there are 11 consecutive positive edges of the Valid signal and clks is low. When clks is high, the outputs of the flip-flops (CKs) are reset.  
+![Simulation results of the SAR Logic block.](./Images/SAR_Logic_simulation.png)
 
-
+### SAR Asynchronous Logic
+Finally, the following images validate the performance of the SAR Asynchronous Logic block. First, the corresponding schematic composed of the two D Flip-Flops and the switches that set to '1' or '0' the bottom plate of the capacitors.
+![SAR  Asynchronous Logic schematic.](./Images/SAR_Async_Logic.png)
+The corresponding testbench is presented.
+![SAR  Asynchronous Logic testbench.](./Images/SAR_Async_Logic_tb.png)
+Finally, we present the simulation results of the asynchronous logic.
+![SAR  Asynchronous Logic simulation results.](./Images/SAR_Async_Logic_tb_sim.png)
 
 
