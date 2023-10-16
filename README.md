@@ -53,3 +53,13 @@ Then, the schematic of the dynamic comparator composed of the opamp, the latch, 
 ![Dynamic Comparator schematic](./Images/Dynamic_Comparator.png)
 Additionally, the corresponding testbench with the 180 degrees out of phase two inputs VDN and VDP.
 ![Dynamic Comparator testbench](./Images/Dynamic_Comparator_tb.png)
+Then, the simulation results for vdn > vdp and vdp > vdn are presented to verify the adequate performance of the Dynamic Comparator.
+![Dynamic Comparator testbench](./Images/Dynamic_Comparator_vdn_great_vdp.png)
+![Dynamic Comparator testbench](./Images/Dynamic_Comparator_vdp_great_vdn.png)
+In both simulation results it can be observed that when the circuit is operating during the reset phase (clkc = '0'), the outputs an and ap of the opamp take the value of '1' (both signals have the same offset in the simulations, an in green is over ap, which is in pink). On the contrary, dp and dn take the value of '0'.
+During the regeneration phase (clkc = '1'), when the input vdp is larger than vdn, the outputs of the latch dn and dp take the values '1' and '0', respectively. Whereas, when vdn is larger than vdn, dn and dp take the values '0' and '1', respectively.
+
+
+
+
+
