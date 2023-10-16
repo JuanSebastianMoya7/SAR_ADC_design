@@ -20,7 +20,7 @@ We define the following values based on the architecture presented above:
 - Vrefp = Vdd​
 - Vrefn = 0
 
-## Description of the main blocks
+## Description and simulation results of the main blocks
 
 The main blocks that integrate the design presented above are:
 
@@ -45,4 +45,11 @@ Follows the testbench for the Bootstrap tracking switch
 ![Bootstrap tracking switch testbench](./Images/tracking_switches_tb.png)
 
 The simulation results of Vgs and Vds for NMOS transistors and Vsg and Vsd for PMOS transistors that integrate the Bootstrap tracking switch are shown.
+![Simulations of Vds and Vgs values for NMOS and PMOS transistors.](./Images/tracking_switch_sims.png)
+It is possible to observe that none of the voltage values exceed 4.1V, which is smaller than the breakdown voltages of the transistors. (In progress to be optimized)
 
+### Dynamic Comparator
+Then, the schematic of the dynamic comparator composed of the opamp, the latch, the two inverters, and the nand can be observed.
+![Dynamic Comparator schematic](./Images/Dynamic_Comparator.png)
+Additionally, the corresponding testbench with the 180 degrees out of phase two inputs VDN and VDP.
+![Dynamic Comparator testbench](./Images/Dynamic_Comparator_tb.png)
