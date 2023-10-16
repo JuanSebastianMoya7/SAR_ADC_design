@@ -20,3 +20,16 @@ We define the following values based on the architecture presented above:
 - Vrefp = Vdd​
 - Vrefn = 0
 
+## Description of the main blocks
+
+The main blocks that integrate the design presented above are:
+
+1) Differential Capacitive DAC (blue rectangle).
+2) Switches for sampling (red rectangle).
+3) Bridge Capacitor (horizontal capacitor in the differential capacitive DAC).
+4) Switches for tracking (green rectangle).
+5) Dynamic Comparator (purple rectangle).
+6) SAR Logic (grey square).
+
+### Differential Capacitive DAC
+The schematic of the capacitive DAC array is composed of 
